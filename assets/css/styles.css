@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@300;400;700;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --light-gray: #cccccc;
+    --deep-orange: #f78065;
+    --footer-background: #F7F7F7;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*:focus {
+    outline: none!important;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    color: var(--black);
+    background: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button.eazy-btn {
+    background: var(--deep-orange);
+    border-radius: 0;
+    color: var(--white);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    padding: 12px 24px;
+    width: 180px;
+}
+
+button.eazy-btn:hover {
+    background: #e66043;
+    color: var(--white);
+}
+
+.btn:focus, 
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Navbar */
+.header-area {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+.account {
+    background: #FFFFFF;
+    border-radius: 26.5px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.account i.arrow {
+    color: #444b53;
+    font-size: 10px;
+}
+
+.account .user {
+    background: var(--deep-orange);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 3px;
+}
+
+.account .user i {
+    color: var(--white);
+    font-size: 12px;
+}
+
+/* Banner Section */
+.banner-area {
+    position: relative;
+    background-image: url("../images/header-img.png");
+    min-height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-area .info {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    left: 50px;
+    bottom: -200px;
+    padding: 50px;
+}
+
+.banner-area .info h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 49px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.banner-area .info h2 span {
+    color: var(--deep-orange);
+}
+
+.banner-area .info p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.banner-area .info button img {
+    width: 12px;
+    height: 12px;
+}
+
+/* Services Section */
+.services {
+    padding: 250px 0 50px 0;
+}
+
+.services .service-item img {
+    margin-bottom: 50px;
+}
+
+.services .service-item .service-item-info h4 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.service-item-info-first-paragraph,
+.service-item-info-first-paragraph {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.service-item-info-first-paragraph {
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.service-item-info-second-paragraph {
+    color: var(--deep-orange);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+}
+
+.features h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+
+.features .feature-item img {
+    margin-bottom: 30px;
+    width: 32px;
+    height: 32px;
+}
+
+.features .feature-item .feature-item-content h4 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.features .feature-item .feature-item-content p,
+.features .feature-item .feature-item-content a {
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+.features .feature-item .feature-item-content p {
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.features .feature-item .feature-item-content a {
+    color: var(--deep-orange);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.features .feature-item .feature-item-content a:hover {
+    color: #e66043;
+}
+
+/* Community Section */
+.community {
+    padding: 50px 0;
+}
+
+.community .community-info h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.community .community-info p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.community .community-info button img {
+    width: 12px;
+    height: 12px;
+}
+
+.community .destination-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.community .destination-item .destination-item-content h4 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.community .destination-item .destination-item-content p,
+.community .destination-item .destination-item-content a {
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+.community .destination-item .destination-item-content p {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.community .destination-item .destination-item-content a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--deep-orange);
+}
+
+.community .destination-item .destination-item-content a:hover {
+    color: #e66043;
+}
+
+/* Why Section */
+.advantages {
+    padding: 50px 0;
+}
+
+.advantages h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+
+.advantages .advantage-item img {
+    margin-bottom: 30px;
+    width: 32px;
+    height: 32px;
+}
+
+.advantages .advantage-item .advantage-item-content h4 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.advantages .advantage-item .advantage-item-content p {
+    font-family: Montserrat;
+    font-style: normal;
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+/* Footer Area */
+.footer-area {
+    background: var(--footer-background);
+    padding: 50px 0;
+}
+
+.company-widget h3,
+.company-widget h2,
+.first-footer-area .footer-navigation-item h3 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.company-widget h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.company-widget h3 a {
+    color: var(--black);
+}
+
+.company-widget h2 {
+    font-size: 36px;
+    line-height: 60px;
+}
+
+.first-footer-area {
+    margin-bottom: 30px;
+}
+
+.first-footer-area .footer-navigation-item h3 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 24px;
+}
+
+.first-footer-area .footer-navigation-item ul li {
+    margin-bottom: 16px;
+}
+
+.first-footer-area .footer-navigation-item ul li a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+}
+
+.first-footer-area .footer-navigation-item ul li a:hover {
+    color: var(--deep-orange);
+    text-decoration: underline;
+}
+
+.footer-area hr {
+    opacity: 0.2;
+    margin: 0;
+}
+
+.second-footer-area {
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.second-footer-area p,
+.second-footer-area ul li a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+}
+
+.second-footer-area p a {
+    color: var(--black);
+}
+
+.second-footer-area p a:hover,
+.company-widget h3 a:hover {
+    color: var(--deep-orange);
+}
+
+.second-footer-area ul li {
+    margin-left: 20px;
+}
+
+.second-footer-area ul li a:hover {
+    color: var(--deep-orange);
+    text-decoration: underline;
+}
+
+/* Scroll To Top */
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+    background: var(--deep-orange);
+    border: none;
+}
+
+.scroll-top:hover {
+    background: #e66043;
+}
+
+.scroll-top i {
+    display: inline-block;
+    color: var(--white);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .banner-area .info {
+        width: 500px;
+        bottom: 0;
+        padding: 30px;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .services {
+        padding: 50px 0 0 0;
+    }
+
+    .services .service-item,
+    .features .feature-item,
+    .advantages .advantage-item,
+    .community .destination-item {
+        margin-bottom: 50px;
+    }
+
+    .features,
+    .advantages,
+    .community {
+        padding: 50px 0 0 0;
+    }
+
+    .services .service-item img {
+        margin-bottom: 30px;
+    }
+
+    .features h2 {
+        text-align: center;
+    }
+
+    .community .community-info {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .advantages h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .banner-area .info {
+        width: 400px;
+    }
+
+    .banner-area .info h2 {
+        font-size: 28px;
+    }
+
+    .banner-area .info p {
+        font-size: 16px;
+    }
+
+    .services .service-item,
+    .features .feature-item,
+    .community .destination-item,
+    .advantages .advantage-item {
+        text-align: center;
+    }
+
+    .first-footer-area .company-widget {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .company-widget h2 {
+        font-size: 30px;
+    }
+
+    .second-footer-area {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .second-footer-area p {
+        margin-bottom: 20px;
+    }
+
+    .second-footer-area ul {
+        align-items: flex-start !important;
+    }
+    
+    .second-footer-area ul > li:first-child {
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .banner-area .info {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .banner-area .info h2 {
+        line-height: 35px;
+    }
+
+    .features h2,
+    .community .community-info h2,
+    .advantages h2,
+    .company-widget h2 {
+        font-size: 28px;
+    }
+
+    .second-footer-area ul {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .second-footer-area ul li {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 290px) {
+    .banner-area .info {
+        width: 250px;
+        padding: 10px;
+    }
+}
